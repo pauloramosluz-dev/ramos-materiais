@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0B1220">
+<title>Seu site recebe visita, mas o WhatsApp não toca · Ramos Tecnologia</title><meta property="og:title" content="Seu site recebe visita, mas o WhatsApp não toca"><meta property="og:description" content="Passo a passo para revisar seu site e abrir um caminho fácil até você"><meta property="og:image" content="https://pauloramosluz-dev.github.io/ramos-materiais/m/b156b7753629/capa-link.png"><meta property="og:type" content="article"><link rel="icon" href="../../favicon.png">
+<style>
+@font-face { font-family: Sora; font-weight: 700; font-display: swap; src: url(../../fonts/sora-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 400; font-display: swap; src: url(../../fonts/plus-jakarta-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; font-display: swap; src: url(../../fonts/plus-jakarta-sans-latin-600-normal.woff2) format("woff2"); }
+:root { --navy: #0B1220; --ouro: #D4A853; --ouro-claro: #F0D08A; --ouro-texto: #8A6416; --creme: #F6F2EA; --linha: #E4DCCD;
+  --texto: #0B1220; --suave: #44506A; --azul-fundo: #E3EAFF; --azul-texto: #1D3A8A; --erro: #B42318; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--creme); color: var(--texto); font: 17px/1.65 "Plus Jakarta Sans", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+h1, h2, h3 { font-family: Sora, system-ui, sans-serif; font-weight: 700; line-height: 1.2; letter-spacing: -.015em; margin: 0; }
+a { color: var(--ouro-texto); }
+.miolo { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+.capa { position: relative; overflow: hidden; color: #F5F1E8;
+  background: radial-gradient(520px 380px at 100% 0%, rgba(47,107,255,.36), transparent 62%), var(--navy); }
+.capa .miolo { padding-top: 22px; padding-bottom: 40px; }
+.marca { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.marca img { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 0 2px var(--ouro); }
+.marca b { display: block; font-family: Sora, sans-serif; font-size: 15px; line-height: 1.2; }
+.marca span { font-size: 13px; color: #BAC0CD; }
+.selo { display: inline-block; margin-top: 36px; font-size: 12px; font-weight: 600; letter-spacing: .14em; color: var(--ouro-claro);
+  border: 1.5px solid rgba(240,208,138,.5); border-radius: 99px; padding: 4px 12px; }
+.capa h1 { margin-top: 14px; font-size: clamp(28px, 8vw, 40px); line-height: 1.12; }
+.capa .sub { margin: 14px 0 0; color: #BAC0CD; font-size: 17px; }
+.acoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 20px;
+  border-radius: 12px; font: 600 16px/1.2 "Plus Jakarta Sans", sans-serif; text-decoration: none; }
+.btn-ouro { background: var(--ouro); color: var(--navy); font-family: Sora, sans-serif; font-weight: 700; }
+.btn-linha { border: 1.5px solid rgba(240,208,138,.55); color: var(--ouro-claro); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+main.miolo { padding-top: 32px; padding-bottom: 24px; }
+h2 { font-size: 22px; margin-bottom: 10px; }
+.intro { margin: 0; color: var(--suave); }
+.sumario { list-style: none; margin: 20px 0 0; padding: 0; border-top: 1px solid var(--linha); }
+.sumario a { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--linha); color: var(--texto);
+  text-decoration: none; font-weight: 600; }
+.sumario span, .num { font-family: Sora, sans-serif; font-weight: 700; color: var(--ouro-texto); }
+.passo { margin-top: 28px; padding: 22px 20px; background: #FFFDF8; border: 1px solid var(--linha); border-radius: 16px;
+  scroll-margin-top: 16px; }
+.passo .num { font-size: 15px; letter-spacing: .06em; }
+.passo h3 { margin-top: 4px; font-size: 20px; }
+.porque { margin: 8px 0 0; color: var(--suave); }
+.passo ol { margin: 14px 0 0; padding-left: 22px; display: grid; gap: 8px; }
+.passo ol li::marker { color: var(--ouro-texto); font-weight: 600; }
+.dica { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--azul-fundo); color: var(--azul-texto); font-size: 16px; }
+.dica b { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.bloco { margin-top: 40px; }
+.erros { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.erros li { position: relative; padding-left: 28px; }
+.erros li::before { content: "✕"; position: absolute; left: 0; top: 0; color: var(--erro); font-weight: 600; }
+.check { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.check label { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: #FFFDF8; border: 1px solid var(--linha);
+  border-radius: 12px; cursor: pointer; }
+.check input { appearance: none; -webkit-appearance: none; flex: none; width: 22px; height: 22px; margin: 2px 0 0; border: 2px solid var(--ouro-texto);
+  border-radius: 6px; display: grid; place-items: center; }
+.check input:checked { background: var(--ouro); border-color: var(--ouro); }
+.check input:checked::after { content: ""; width: 6px; height: 11px; border: solid var(--navy); border-width: 0 2.5px 2.5px 0; transform: translateY(-1px) rotate(45deg); }
+.check input:checked + span { color: var(--suave); text-decoration: line-through; }
+.check input:focus-visible { outline: 3px solid #2F6BFF; outline-offset: 2px; }
+.cta { margin-top: 44px; padding: 28px 22px; border-radius: 20px; color: #F5F1E8;
+  background: radial-gradient(420px 300px at 100% 0%, rgba(47,107,255,.34), transparent 62%), var(--navy); }
+.cta h2 { font-size: 24px; margin: 0; }
+.cta p { margin: 10px 0 0; color: #BAC0CD; }
+.cta .ou { margin-top: 14px; font-size: 15px; }
+.cta .ou a { color: var(--ouro-claro); }
+.baixar { margin-top: 20px; text-align: center; }
+.baixar a { color: var(--ouro-texto); font-weight: 600; }
+footer { max-width: 680px; margin: 0 auto; padding: 24px 20px 40px; color: #646D82; font-size: 14px; }
+footer a { color: inherit; }
+</style></head><body>
+<header class="capa"><div class="miolo">
+  <a class="marca" href="https://instagram.com/ramostecnologia.ofc"><img src="../../ramos-logo.jpg" alt=""><div><b>Ramos Tecnologia</b><span>@ramostecnologia.ofc</span></div></a>
+  <span class="selo">GUIA COMPLETO</span>
+  <h1>Seu site recebe visita, mas o WhatsApp não toca</h1>
+  <p class="sub">Passo a passo para revisar seu site e abrir um caminho fácil até você</p>
+  <div class="acoes">
+    <a class="btn btn-ouro" href="#passo-1">Começar o passo a passo</a>
+    <a class="btn btn-linha" href="guia-site.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Baixar em PDF</a>
+  </div>
+</div></header>
+<main class="miolo">
+  <h2>Antes de começar</h2>
+  <p class="intro">Quem entra no seu site já está procurando o que você vende. Se o WhatsApp não toca, quase sempre o problema está no caminho entre a visita e a conversa. Este guia mostra como revisar o seu site sozinho, sem precisar entender de tecnologia. Separe o celular e um tempinho com calma.</p>
+  <ol class="sumario"><li><a href="#passo-1"><span>01</span>Veja seu site como um cliente</a></li><li><a href="#passo-2"><span>02</span>Deixe o botão do WhatsApp sempre na tela</a></li><li><a href="#passo-3"><span>03</span>Crie uma mensagem pronta para o cliente</a></li><li><a href="#passo-4"><span>04</span>Mostre preço, horário e endereço logo no começo</a></li><li><a href="#passo-5"><span>05</span>Convide o cliente a chamar com as palavras certas</a></li><li><a href="#passo-6"><span>06</span>Prepare o WhatsApp para receber quem chega</a></li><li><a href="#passo-7"><span>07</span>Teste o caminho do começo ao fim</a></li></ol>
+  
+    <section class="passo" id="passo-1">
+      <div class="num">01</div>
+      <h3>Veja seu site como um cliente</h3>
+      <p class="porque">Você conhece seu site de cor e acaba não percebendo o que falta. O cliente chega com pressa, quase sempre pelo celular, e desiste quando não acha o que procura.</p>
+      <ol><li>Abra seu site no celular, como se fosse a primeira vez.</li><li>Sem rolar a tela, veja se dá para saber o que você vende, onde fica e como falar com você.</li><li>Tente chamar no WhatsApp e repare em quantos toques precisou.</li><li>Anote tudo que demorou para achar ou que deixou dúvida.</li><li>Peça para um amigo fazer o mesmo teste e contar o que sentiu.</li></ol>
+      <div class="dica"><b>Dica</b>Um site pode parecer ótimo no computador e confuso no celular. Faça esse teste sempre começando pelo celular.</div>
+    </section>
+    <section class="passo" id="passo-2">
+      <div class="num">02</div>
+      <h3>Deixe o botão do WhatsApp sempre na tela</h3>
+      <p class="porque">Se o botão só aparece no fim da página, o cliente precisa caçar por ele. O botão fixo acompanha a pessoa enquanto ela rola a página e fica à mão na hora em que ela decide chamar.</p>
+      <ol><li>Entre no painel onde você edita o site (Wix, WordPress, Nuvemshop ou outro).</li><li>Procure por “WhatsApp”, “botão flutuante” ou “chat” na área de aplicativos ou complementos.</li><li>Escolha a opção que deixa o botão fixo no canto de baixo da tela.</li><li>Coloque seu número com DDD e salve.</li><li>Abra o site no celular e role até o fim: o botão precisa aparecer o tempo todo.</li><li>Confira se ele não cobre textos ou outros botões importantes.</li></ol>
+      <div class="dica"><b>Dica</b>Use o ícone verde do WhatsApp que todo mundo conhece. A pessoa entende na hora, sem precisar ler nada.</div>
+    </section>
+    <section class="passo" id="passo-3">
+      <div class="num">03</div>
+      <h3>Crie uma mensagem pronta para o cliente</h3>
+      <p class="porque">Quando a conversa abre vazia, o cliente trava sem saber o que escrever e muitas vezes desiste. Com uma mensagem pronta, ele só precisa apertar enviar.</p>
+      <ol><li>Escreva uma frase curta, do jeito que o cliente falaria. Exemplo: “Olá! Vi o site e quero saber mais sobre os serviços.”</li><li>Pesquise no Google por “gerar link do WhatsApp com mensagem” e abra um gerador gratuito.</li><li>Coloque seu número com DDD, cole a sua frase e copie o link que aparecer.</li><li>No editor do site, clique no botão do WhatsApp e troque o link antigo por esse novo.</li><li>Salve, abra o site no celular e toque no botão: a mensagem precisa aparecer já escrita na conversa.</li></ol>
+      <div class="dica"><b>Dica</b>Se você vende coisas diferentes, crie uma mensagem para cada página. Assim, quando a mensagem chegar, você já sabe do que o cliente quer falar.</div>
+    </section>
+    <section class="passo" id="passo-4">
+      <div class="num">04</div>
+      <h3>Mostre preço, horário e endereço logo no começo</h3>
+      <p class="porque">Quem não acha essas informações fica na dúvida e vai procurar em outro lugar. Deixar tudo à vista resolve as dúvidas antes que a pessoa desista.</p>
+      <ol><li>Na primeira parte do site, a que aparece sem rolar, escreva em uma frase o que você faz e para quem.</li><li>Logo abaixo, coloque seu horário de atendimento e sua cidade ou endereço.</li><li>Mostre o preço, ou pelo menos um “a partir de”, nos serviços principais.</li><li>Se não tem como dar preço fixo, explique como funciona o orçamento. Exemplo: “Orçamento sem compromisso pelo WhatsApp”.</li><li>Repita horário e endereço no fim da página, perto do botão.</li></ol>
+      <div class="dica"><b>Dica</b>Se você atende em um local, coloque o endereço com link para o mapa. Quem vai até você chega com um toque, sem copiar nada.</div>
+    </section>
+    <section class="passo" id="passo-5">
+      <div class="num">05</div>
+      <h3>Convide o cliente a chamar com as palavras certas</h3>
+      <p class="porque">Um botão escrito só “Contato” não diz o que acontece depois do clique. Quando o convite é claro, o próximo passo fica óbvio para quem está lendo.</p>
+      <ol><li>Troque textos como “Contato” ou “Fale conosco” por algo direto, como “Pedir orçamento no WhatsApp”.</li><li>Coloque um convite assim no fim de cada parte importante do site.</li><li>Perto do botão, diga o que a pessoa ganha ao chamar. Exemplo: “Tire suas dúvidas sem compromisso”.</li><li>Leia o texto em voz alta. Se parece você conversando com um cliente, está bom.</li></ol>
+      <div class="dica"><b>Dica</b>Não peça um cadastro longo logo de cara. O primeiro passo deve ser só uma conversa.</div>
+    </section>
+    <section class="passo" id="passo-6">
+      <div class="num">06</div>
+      <h3>Prepare o WhatsApp para receber quem chega</h3>
+      <p class="porque">O site leva o cliente até a conversa, mas o que segura ele é o atendimento. Quem manda mensagem e fica sem resposta acaba procurando outra opção.</p>
+      <ol><li>Use o WhatsApp Business, o aplicativo gratuito do WhatsApp para empresas.</li><li>Vá em Configurações, toque em “Ferramentas comerciais” e depois em “Mensagem de saudação”.</li><li>Escreva uma mensagem de boas-vindas curta, avisando que você já viu a mensagem e logo responde.</li><li>Em “Mensagem de ausência”, informe seu horário para quem chamar fora dele.</li><li>Preencha o perfil da empresa com horário, endereço e o link do site.</li></ol>
+      <div class="dica"><b>Dica</b>Use as “Respostas rápidas” para guardar o que você mais repete, como preço, formas de pagamento e endereço.</div>
+    </section>
+    <section class="passo" id="passo-7">
+      <div class="num">07</div>
+      <h3>Teste o caminho do começo ao fim</h3>
+      <p class="porque">Um número errado ou um link quebrado faz o cliente cair no nada, e você nem fica sabendo. Um teste simples evita esse problema.</p>
+      <ol><li>Toque em cada botão de WhatsApp do site, um por um.</li><li>Veja se abre o número certo e se a mensagem pronta aparece.</li><li>Faça o teste no celular e no computador.</li><li>Peça para alguém de fora mandar uma mensagem pelo site e confira se chegou.</li><li>Revise também o telefone, o e-mail e o endereço escritos no site.</li></ol>
+      <div class="dica"><b>Dica</b>Repita esse teste sempre que mudar alguma coisa no site ou trocar de número.</div>
+    </section>
+  <div class="bloco"><h2>Erros comuns</h2><ul class="erros"><li>Botão do WhatsApp escondido no fim da página, onde pouca gente chega.</li><li>Link que abre uma conversa vazia, sem mensagem pronta.</li><li>Número errado, sem DDD ou de um celular que ninguém olha.</li><li>Preço, horário e endereço só aparecem depois de muito rolar, ou nem aparecem.</li><li>Botão escrito apenas “Contato”, sem dizer o que acontece depois do clique.</li></ul></div>
+  <div class="bloco"><h2>Checklist final</h2><ul class="check"><li><label><input type="checkbox"><span>Testei meu site no celular como se fosse um cliente.</span></label></li><li><label><input type="checkbox"><span>O botão do WhatsApp fica fixo na tela o tempo todo.</span></label></li><li><label><input type="checkbox"><span>O botão não cobre textos nem outros botões.</span></label></li><li><label><input type="checkbox"><span>Ao tocar no botão, a conversa abre com mensagem pronta.</span></label></li><li><label><input type="checkbox"><span>O número está certo e com DDD.</span></label></li><li><label><input type="checkbox"><span>Dá para saber o que eu faço sem rolar a tela.</span></label></li><li><label><input type="checkbox"><span>Preço ou forma de orçamento estão à vista.</span></label></li><li><label><input type="checkbox"><span>Horário e endereço aparecem logo no começo.</span></label></li><li><label><input type="checkbox"><span>O texto do botão diz o que acontece depois do clique.</span></label></li><li><label><input type="checkbox"><span>Meu WhatsApp Business tem saudação e mensagem de ausência.</span></label></li><li><label><input type="checkbox"><span>Alguém de fora testou e a mensagem chegou.</span></label></li></ul></div>
+  <div class="cta">
+    <h2>Quer que a gente revise o seu site?</h2>
+    <p>Se preferir não mexer sozinho, a Ramos Tecnologia revisa seu site e ajusta botão, mensagem pronta e informações para facilitar o caminho até você.</p>
+    <div class="acoes"><a class="btn btn-ouro" href="https://wa.me/5571993652098?text=Ol%C3%A1%21%20Li%20o%20guia%20sobre%20o%20site%20e%20o%20WhatsApp%20e%20quero%20ajuda%20para%20revisar%20o%20meu.">Falar no WhatsApp</a></div>
+    <p class="ou">Ou chame no Direct: <a href="https://ig.me/m/ramostecnologia.ofc">@ramostecnologia.ofc</a></p>
+  </div>
+  <p class="baixar"><a href="guia-site.pdf" download>Baixar este guia em PDF</a></p>
+</main>
+<footer>Ramos Tecnologia · Sites que viram conversa · <a href="../../politica-de-privacidade.html">Privacidade</a></footer>
+</body></html>

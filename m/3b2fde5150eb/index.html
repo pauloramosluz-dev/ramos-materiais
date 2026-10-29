@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0B1220">
+<title>Como fazer o cliente encontrar sua empresa na internet · Ramos Tecnologia</title><meta property="og:title" content="Como fazer o cliente encontrar sua empresa na internet"><meta property="og:description" content="O passo a passo para não perder clientes para o concorrente por falta de informação"><meta property="og:image" content="https://pauloramosluz-dev.github.io/ramos-materiais/m/3b2fde5150eb/capa-link.png"><meta property="og:type" content="article"><link rel="icon" href="../../favicon.png">
+<style>
+@font-face { font-family: Sora; font-weight: 700; font-display: swap; src: url(../../fonts/sora-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 400; font-display: swap; src: url(../../fonts/plus-jakarta-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; font-display: swap; src: url(../../fonts/plus-jakarta-sans-latin-600-normal.woff2) format("woff2"); }
+:root { --navy: #0B1220; --ouro: #D4A853; --ouro-claro: #F0D08A; --ouro-texto: #8A6416; --creme: #F6F2EA; --linha: #E4DCCD;
+  --texto: #0B1220; --suave: #44506A; --azul-fundo: #E3EAFF; --azul-texto: #1D3A8A; --erro: #B42318; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--creme); color: var(--texto); font: 17px/1.65 "Plus Jakarta Sans", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+h1, h2, h3 { font-family: Sora, system-ui, sans-serif; font-weight: 700; line-height: 1.2; letter-spacing: -.015em; margin: 0; }
+a { color: var(--ouro-texto); }
+.miolo { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+.capa { position: relative; overflow: hidden; color: #F5F1E8;
+  background: radial-gradient(520px 380px at 100% 0%, rgba(47,107,255,.36), transparent 62%), var(--navy); }
+.capa .miolo { padding-top: 22px; padding-bottom: 40px; }
+.marca { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.marca img { width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 0 0 2px var(--ouro); }
+.marca b { display: block; font-family: Sora, sans-serif; font-size: 15px; line-height: 1.2; }
+.marca span { font-size: 13px; color: #BAC0CD; }
+.selo { display: inline-block; margin-top: 36px; font-size: 12px; font-weight: 600; letter-spacing: .14em; color: var(--ouro-claro);
+  border: 1.5px solid rgba(240,208,138,.5); border-radius: 99px; padding: 4px 12px; }
+.capa h1 { margin-top: 14px; font-size: clamp(28px, 8vw, 40px); line-height: 1.12; }
+.capa .sub { margin: 14px 0 0; color: #BAC0CD; font-size: 17px; }
+.acoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 20px;
+  border-radius: 12px; font: 600 16px/1.2 "Plus Jakarta Sans", sans-serif; text-decoration: none; }
+.btn-ouro { background: var(--ouro); color: var(--navy); font-family: Sora, sans-serif; font-weight: 700; }
+.btn-linha { border: 1.5px solid rgba(240,208,138,.55); color: var(--ouro-claro); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+main.miolo { padding-top: 32px; padding-bottom: 24px; }
+h2 { font-size: 22px; margin-bottom: 10px; }
+.intro { margin: 0; color: var(--suave); }
+.sumario { list-style: none; margin: 20px 0 0; padding: 0; border-top: 1px solid var(--linha); }
+.sumario a { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--linha); color: var(--texto);
+  text-decoration: none; font-weight: 600; }
+.sumario span, .num { font-family: Sora, sans-serif; font-weight: 700; color: var(--ouro-texto); }
+.passo { margin-top: 28px; padding: 22px 20px; background: #FFFDF8; border: 1px solid var(--linha); border-radius: 16px;
+  scroll-margin-top: 16px; }
+.passo .num { font-size: 15px; letter-spacing: .06em; }
+.passo h3 { margin-top: 4px; font-size: 20px; }
+.porque { margin: 8px 0 0; color: var(--suave); }
+.passo ol { margin: 14px 0 0; padding-left: 22px; display: grid; gap: 8px; }
+.passo ol li::marker { color: var(--ouro-texto); font-weight: 600; }
+.dica { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--azul-fundo); color: var(--azul-texto); font-size: 16px; }
+.dica b { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.bloco { margin-top: 40px; }
+.erros { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.erros li { position: relative; padding-left: 28px; }
+.erros li::before { content: "✕"; position: absolute; left: 0; top: 0; color: var(--erro); font-weight: 600; }
+.check { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.check label { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; background: #FFFDF8; border: 1px solid var(--linha);
+  border-radius: 12px; cursor: pointer; }
+.check input { appearance: none; -webkit-appearance: none; flex: none; width: 22px; height: 22px; margin: 2px 0 0; border: 2px solid var(--ouro-texto);
+  border-radius: 6px; display: grid; place-items: center; }
+.check input:checked { background: var(--ouro); border-color: var(--ouro); }
+.check input:checked::after { content: ""; width: 6px; height: 11px; border: solid var(--navy); border-width: 0 2.5px 2.5px 0; transform: translateY(-1px) rotate(45deg); }
+.check input:checked + span { color: var(--suave); text-decoration: line-through; }
+.check input:focus-visible { outline: 3px solid #2F6BFF; outline-offset: 2px; }
+.cta { margin-top: 44px; padding: 28px 22px; border-radius: 20px; color: #F5F1E8;
+  background: radial-gradient(420px 300px at 100% 0%, rgba(47,107,255,.34), transparent 62%), var(--navy); }
+.cta h2 { font-size: 24px; margin: 0; }
+.cta p { margin: 10px 0 0; color: #BAC0CD; }
+.cta .ou { margin-top: 14px; font-size: 15px; }
+.cta .ou a { color: var(--ouro-claro); }
+.baixar { margin-top: 20px; text-align: center; }
+.baixar a { color: var(--ouro-texto); font-weight: 600; }
+footer { max-width: 680px; margin: 0 auto; padding: 24px 20px 40px; color: #646D82; font-size: 14px; }
+footer a { color: inherit; }
+</style></head><body>
+<header class="capa"><div class="miolo">
+  <a class="marca" href="https://instagram.com/ramostecnologia.ofc"><img src="../../ramos-logo.jpg" alt=""><div><b>Ramos Tecnologia</b><span>@ramostecnologia.ofc</span></div></a>
+  <span class="selo">GUIA COMPLETO</span>
+  <h1>Como fazer o cliente encontrar sua empresa na internet</h1>
+  <p class="sub">O passo a passo para não perder clientes para o concorrente por falta de informação</p>
+  <div class="acoes">
+    <a class="btn btn-ouro" href="#passo-1">Começar o passo a passo</a>
+    <a class="btn btn-linha" href="guia-manual.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Baixar em PDF</a>
+  </div>
+</div></header>
+<main class="miolo">
+  <h2>Antes de começar</h2>
+  <p class="intro">Quando alguém precisa de um serviço, quase sempre pesquisa na internet antes de decidir. Se não encontra nada sobre a sua empresa, ou encontra informações velhas, fecha com quem aparece primeiro. Este guia mostra o que revisar no site, no Instagram e no WhatsApp para o cliente achar você e saber como chegar até você. Faça um passo de cada vez e marque o checklist no final.</p>
+  <ol class="sumario"><li><a href="#passo-1"><span>01</span>Pesquise sua empresa como um cliente faria</a></li><li><a href="#passo-2"><span>02</span>Tenha um site com o essencial</a></li><li><a href="#passo-3"><span>03</span>Complete o perfil do Instagram</a></li><li><a href="#passo-4"><span>04</span>Use as mesmas informações em todo lugar</a></li><li><a href="#passo-5"><span>05</span>Mantenha o Instagram ativo toda semana</a></li><li><a href="#passo-6"><span>06</span>Facilite o primeiro contato</a></li><li><a href="#passo-7"><span>07</span>Revise tudo uma vez por mês</a></li></ol>
+  
+    <section class="passo" id="passo-1">
+      <div class="num">01</div>
+      <h3>Pesquise sua empresa como um cliente faria</h3>
+      <p class="porque">Antes de mudar qualquer coisa, você precisa ver o que o cliente vê hoje. É assim que você descobre o que está faltando.</p>
+      <ol><li>Abra o Google no celular, numa aba anônima, para a pesquisa não ser influenciada pelo seu histórico.</li><li>Digite o nome da sua empresa e a sua cidade.</li><li>Depois digite o que você vende e o nome do seu bairro, por exemplo: &#x27;salão de beleza Centro&#x27;.</li><li>Anote o que aparece: seu site, seu Instagram, o endereço, o telefone.</li><li>Anote também o que deveria aparecer e não aparece.</li><li>Veja quais concorrentes aparecem e o que eles mostram que você ainda não mostra.</li></ol>
+      <div class="dica"><b>Dica</b>Peça para um amigo fazer a mesma pesquisa no celular dele e te contar o que encontrou.</div>
+    </section>
+    <section class="passo" id="passo-2">
+      <div class="num">02</div>
+      <h3>Tenha um site com o essencial</h3>
+      <p class="porque">O site é o lugar onde o cliente encontra tudo sobre você de uma vez. Quem pesquisa seu nome e não acha nada pode pensar que sua empresa não existe mais.</p>
+      <ol><li>Escreva numa folha o que você faz, em uma frase simples.</li><li>Liste seus principais serviços ou produtos, com preço ou faixa de preço quando der.</li><li>Anote endereço completo, horário de funcionamento e o número do WhatsApp.</li><li>Separe fotos reais do seu espaço, do seu trabalho e da sua equipe.</li><li>Confira se o site mostra tudo isso logo no começo da página, sem o cliente precisar procurar.</li><li>Abra o site no celular e veja se o botão do WhatsApp aparece fácil.</li></ol>
+      <div class="dica"><b>Dica</b>Se você já tem site, leia ele como se fosse um cliente com pressa: se em poucos segundos não dá para entender o que você faz e como falar com você, ele precisa de ajuste.</div>
+    </section>
+    <section class="passo" id="passo-3">
+      <div class="num">03</div>
+      <h3>Complete o perfil do Instagram</h3>
+      <p class="porque">Muita gente procura a empresa direto no Instagram. Um perfil sem endereço, horário e link faz o cliente desistir e ir para o próximo.</p>
+      <ol><li>Abra seu perfil e toque em &#x27;Editar perfil&#x27;.</li><li>No campo &#x27;Nome&#x27;, escreva o nome da empresa e o que você faz, por exemplo: &#x27;Ana Doces | Bolos de festa&#x27;.</li><li>Na bio, escreva em poucas linhas o que você faz, onde atende e o horário de funcionamento.</li><li>Em &#x27;Links&#x27;, coloque o endereço do seu site ou o link do seu WhatsApp.</li><li>Se a conta for profissional, procure &#x27;Opções de contato&#x27; e preencha endereço, telefone e e-mail.</li><li>Saia da edição e confira como o perfil ficou para quem visita.</li></ol>
+      <div class="dica"><b>Dica</b>Se sua conta ainda é pessoal, mude para profissional em Configurações, na parte &#x27;Tipo de conta e ferramentas&#x27;. Assim aparecem os botões de contato e endereço.</div>
+    </section>
+    <section class="passo" id="passo-4">
+      <div class="num">04</div>
+      <h3>Use as mesmas informações em todo lugar</h3>
+      <p class="porque">Quando o horário do site é um e o do Instagram é outro, o cliente fica sem saber em qual acreditar. Informação igual em todo lugar passa confiança.</p>
+      <ol><li>Escreva numa folha a versão oficial do nome, endereço, telefone e horário.</li><li>Confira se o site mostra exatamente essas informações.</li><li>Confira a bio e as opções de contato do Instagram.</li><li>No WhatsApp Business, abra Configurações, depois &#x27;Ferramentas comerciais&#x27; e &#x27;Perfil comercial&#x27;, e preencha os mesmos dados.</li><li>Corrija qualquer diferença que encontrar, até um número de telefone antigo.</li></ol>
+      <div class="dica"><b>Dica</b>Guarde essa folha com a versão oficial. Sempre que algo mudar, use ela para atualizar todos os lugares de uma vez.</div>
+    </section>
+    <section class="passo" id="passo-5">
+      <div class="num">05</div>
+      <h3>Mantenha o Instagram ativo toda semana</h3>
+      <p class="porque">Um perfil parado há meses dá a impressão de que a empresa fechou. Postar com frequência mostra que você está aberto e trabalhando.</p>
+      <ol><li>Escolha um dia fixo da semana para postar e anote na agenda.</li><li>Faça uma lista de ideias: um serviço sendo feito, uma dúvida que os clientes sempre perguntam, os bastidores, um aviso de horário.</li><li>Tire as fotos e grave os vídeos durante a semana, no meio do trabalho.</li><li>No dia combinado, publique e responda os comentários.</li><li>Fixe no topo do perfil os posts que melhor explicam o que você faz: toque nos três pontinhos do post e escolha &#x27;Fixar no perfil&#x27;.</li></ol>
+      <div class="dica"><b>Dica</b>Nos Stories, avise mudanças de horário, feriados e novidades. É rápido e mostra que tem gente cuidando do perfil.</div>
+    </section>
+    <section class="passo" id="passo-6">
+      <div class="num">06</div>
+      <h3>Facilite o primeiro contato</h3>
+      <p class="porque">Encontrar a empresa é só o começo. Se o cliente não consegue falar com você na hora, ele procura outro.</p>
+      <ol><li>Confira se o botão do WhatsApp aparece no site e no Instagram.</li><li>No WhatsApp Business, abra &#x27;Ferramentas comerciais&#x27; e ative a &#x27;Mensagem de saudação&#x27; para quem manda mensagem pela primeira vez.</li><li>Ative também a &#x27;Mensagem de ausência&#x27; para avisar seu horário quando você não puder responder.</li><li>Peça para alguém de fora mandar uma mensagem pelo botão do site e conte quanto tempo levou até a resposta.</li><li>Responda as mensagens e os comentários do Instagram todos os dias.</li></ol>
+      <div class="dica"><b>Dica</b>Na mensagem de saudação, já diga como o cliente pode adiantar o pedido, por exemplo: &#x27;Me conta qual serviço você procura e o seu bairro&#x27;.</div>
+    </section>
+    <section class="passo" id="passo-7">
+      <div class="num">07</div>
+      <h3>Revise tudo uma vez por mês</h3>
+      <p class="porque">Preço, horário e serviços mudam com o tempo. Informação desatualizada faz o cliente perder a viagem ou desistir.</p>
+      <ol><li>Marque na agenda um dia do mês para a revisão.</li><li>Repita a pesquisa do primeiro passo e veja o que mudou.</li><li>Confira preços, horários e fotos no site e no Instagram.</li><li>Antes de feriados, atualize o horário em todos os lugares.</li><li>Anote o que ainda falta melhorar para o mês seguinte.</li></ol>
+      <div class="dica"><b>Dica</b>Use o checklist do final deste guia na revisão. Assim você não esquece nenhum item.</div>
+    </section>
+  <div class="bloco"><h2>Erros comuns</h2><ul class="erros"><li>Achar que só o Instagram basta e não ter nenhuma página para quem pesquisa o nome da empresa.</li><li>Deixar a bio só com uma frase bonita, sem dizer o que faz, onde fica e como falar com você.</li><li>Ter um horário no site, outro no Instagram e outro no WhatsApp.</li><li>Passar meses sem postar e deixar o perfil com cara de empresa fechada.</li><li>Colocar o botão do WhatsApp escondido no fim da página.</li></ul></div>
+  <div class="bloco"><h2>Checklist final</h2><ul class="check"><li><label><input type="checkbox"><span>Pesquisei minha empresa no Google como um cliente faria.</span></label></li><li><label><input type="checkbox"><span>Anotei o que o cliente não encontra sobre mim.</span></label></li><li><label><input type="checkbox"><span>Tenho um site com serviços, preços, endereço e horário.</span></label></li><li><label><input type="checkbox"><span>O botão do WhatsApp aparece fácil no site, no celular.</span></label></li><li><label><input type="checkbox"><span>O nome do Instagram diz o que eu faço.</span></label></li><li><label><input type="checkbox"><span>A bio tem o que faço, onde atendo e o horário.</span></label></li><li><label><input type="checkbox"><span>O link do site ou do WhatsApp está na bio.</span></label></li><li><label><input type="checkbox"><span>Nome, endereço, telefone e horário estão iguais em todo lugar.</span></label></li><li><label><input type="checkbox"><span>Escolhi um dia fixo da semana para postar.</span></label></li><li><label><input type="checkbox"><span>Fixei no topo os posts que explicam meu trabalho.</span></label></li><li><label><input type="checkbox"><span>Ativei a mensagem de saudação e de ausência no WhatsApp Business.</span></label></li><li><label><input type="checkbox"><span>Marquei na agenda a revisão do mês.</span></label></li></ul></div>
+  <div class="cta">
+    <h2>Quer ajuda para sua empresa ser encontrada?</h2>
+    <p>A Ramos Tecnologia cria o site da sua empresa e cuida do seu Instagram, para quem procura você encontrar tudo o que precisa.</p>
+    <div class="acoes"><a class="btn btn-ouro" href="https://wa.me/5571993652098?text=Ol%C3%A1%21%20Li%20o%20manual%20sobre%20como%20ser%20encontrado%20na%20internet%20e%20quero%20ajuda%20com%20o%20site%20e%20o%20Instagram%20da%20minha%20empresa.">Falar no WhatsApp</a></div>
+    <p class="ou">Ou chame no Direct: <a href="https://ig.me/m/ramostecnologia.ofc">@ramostecnologia.ofc</a></p>
+  </div>
+  <p class="baixar"><a href="guia-manual.pdf" download>Baixar este guia em PDF</a></p>
+</main>
+<footer>Ramos Tecnologia · Sites que viram conversa · <a href="../../politica-de-privacidade.html">Privacidade</a></footer>
+</body></html>
